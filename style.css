@@ -1,0 +1,155 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar */
+header {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 15px 10%;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+}
+
+.hero-text h1{
+    font-size: 48px;
+}
+
+.hero-text span {
+    color: #ff5733;
+}
+
+.hero.text p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff5733;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* About */
+.about {
+    text-align: center;
+    padding: 70px 10%;
+}
+
+/* Projects */
+.projects {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.project-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project-card {
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0 2px 10 px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Contact Form */
+.contact {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 350px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img img {
+        width: 250px;
+        margin-top: 20px;
+    }
+
+    nav ul {
+        display: none; /* simple mobile menu */
+    }
+}
